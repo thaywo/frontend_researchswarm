@@ -3,7 +3,7 @@ import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, L
 import { TrendingUp, BarChart3 } from 'lucide-react';
 import { apiClient, TrendData } from '../api/client';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://agentic-challenge-backend.onrender.com/api';
 
 export function TrendsAnalytics() {
   const [trends, setTrends] = useState<TrendData[]>([]);
